@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ head_title }}</title>
+
+    <!-- Styles -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="IPslider/themes/reveal/css/reveal.css">
+    <link rel="stylesheet" href="IPslider/themes/reveal/css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="IPslider/themes/reveal/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="IPslider/themes/reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="IPslider/themes/reveal/lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- /Styles -->
+
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+      {% for slide in slides %}
+            <section>
+            {% if slide.header %}
+                   {{ slide.header }}
+            {% endif %}
+            {% if slide.content %}
+                   {{ slide.content }}
+            {% endif %}
+            </section>
+      {% endfor %}
+    </div>
+</div>
+
+<!-- Javascripts -->
+		<script src="IPslider/themes/reveal/lib/js/head.min.js"></script>
+
+		<script src="IPslider/themes/reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'IPslider/themes/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'IPslider/themes/reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'IPslider/themes/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'IPslider/themes/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'IPslider/themes/reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'IPslider/themes/reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                                        { src: 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML', async: true },                                     
+                                        { src: 'IPslider/themes/reveal/mathjaxconf.js', async: true}
+                                        ]
+			});
+
+		</script>
+
+<script>
+Reveal.addEventListener( 'slidechanged', function( event ) {   
+MathJax.Hub.Rerender();
+} );
+</script>
+<!-- /Javascripts -->
+</body>
+</html>
