@@ -236,7 +236,7 @@ And you can find me at:
 
     <script>
         Reveal.addEventListener( 'slidechanged', function( event ) {   
-        MathJax.Hub.Rerender();
+        MathJax.Hub.Rerender(event.currentSlide);
         });
     </script>
 
