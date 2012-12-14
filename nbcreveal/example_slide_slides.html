@@ -1,41 +1,46 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-    <link rel="stylesheet" href="reveal/css/reveal.css">
-    <link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
+<link rel="stylesheet" href="reveal/css/reveal.css">
+<link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
 
-    <!-- For syntax highlighting -->
-    <link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
 
-    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
-    <script>
-        document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-    </script>
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+</script>
 
-    <!--[if lt IE 9]>
-    <script src="reveal/lib/js/html5shiv.js"></script>
-    <![endif]-->
+<!--[if lt IE 9]>
+<script src="reveal/lib/js/html5shiv.js"></script>
+<![endif]-->
 
 </head>
-<body><div class="reveal"><div class="slides">
+
+<div class="reveal"><div class="slides">
 <section data-markdown><script type="text/template">
 
 # Notebook Slide Example
 
-Rendered by vIPer using [Reveal.js](http://lab.hakim.se/reveal-js)!
+Rendered by nbconvert using [Reveal.js](http://lab.hakim.se/reveal-js)!
 
-(also you can get a [pdf](http://www.slideviper.oquanta.info/reveal/slides.pdf) version with chrome!)
+<p class="fragment">
+by Damián Avila
+</p>
 
-</script></section><section><section data-markdown><script type="text/template">
+</script></section>
+<section>
+<section data-markdown><script type="text/template">
 
 ## NOTE: This notebook was modified from a Fernando's one
+
 
 Since the notebook was introduced with [IPython 0.12](http://ipython.org/ipython-doc/rel-0.12.1/whatsnew/version0.12.html), it has proved to be very popular, and we are seeing great adoption of the tool and the underlying file format in research and education.  One persistent question we've had since the beginning (even prior to its official release) was whether it would be possible to easily write blog posts using the notebook.
 
@@ -49,9 +54,13 @@ Today, in answering a query about this from a colleague, I decided to try again 
 
 This post was *entirely* written as a notebook, and in fact I have now created a [github repo](https://github.com/fperez/blog), which means that you can see it directly [rendered in IPyhton's nbviewer app](http://nbviewer.ipython.org/urls/raw.github.com/fperez/blog/master/120907-Blogging with the IPython Notebook.ipynb).
 
-</script></section></section><section><section data-markdown><script type="text/template">
+</script></section>
+</section>
+<section>
+<section data-markdown><script type="text/template">
 
 ## Converting your notebook to html with nbconvert
+
 
 The first thing you will need is our [nbconvert](https://github.com/ipython/nbconvert) tool that converts notebooks across formats.  The README file in the repo contains the requirements for nbconvert (basically [python-markdown](http://pypi.python.org/pypi/Markdown/), [pandoc](http://johnmacfarlane.net/pandoc), [docutils from SVN](http://docutils.svn.sourceforge.net/viewvc/docutils/trunk/docutils/?view=tar) and [pygments](http://pygments.org)).
 
@@ -78,18 +87,36 @@ This will leave two files in your computer, one named `your_notebook.html` and o
     120907-Blogging with the IPython Notebook.html         old/
     120907-Blogging with the IPython Notebook.ipynb
 
-</script></section></section><section><section data-markdown><script type="text/template">
+</script></section>
+</section>
+<section>
+<section data-markdown><script type="text/template">
 
 ## Configuring your Blogger blog to accept notebooks
+
 
 The notebook uses a lot of custom CSS for formatting input and output, as well as Javascript from [MathJax](http://www.mathjax.org) to display mathematical notation.  You will need all this CSS and the Javascript calls in your blog's configuration for your notebook-based posts to display correctly:
 
 </script></section><section data-markdown><script type="text/template">
 
-1. Once authenticated, go to your blog's overview page by clicking on its title.
-2. Click on templates (left column) and customize using the Advanced options.
-3. Scroll down the middle column until you see an "Add CSS" option.
-4. Copy entire the contents of the `_header` file into the CSS box.
+<p class="fragment">
+* Once authenticated, go to your blog's overview page by clicking on its title.
+</p>
+
+
+
+
+<p class="fragment">
+* Click on templates (left column) and customize using the Advanced options.
+</p>
+
+<p class="fragment">
+* Scroll down the middle column until you see an "Add CSS" option.
+</p>
+
+<p class="fragment">
+* Copy entire the contents of the `_header` file into the CSS box.
+</p>
 
 </script></section><section data-markdown><script type="text/template">
 
@@ -103,17 +130,22 @@ I also had problems using some of the fancier templates available from 'Dynamic 
 
 *Note:* if you change blog templates, Blogger does destroy your custom CSS, so you may need to repeat the above steps in that case.
 
-</script></section></section><section data-markdown><script type="text/template">
+</script></section>
+</section>
+<section data-markdown><script type="text/template">
 
 ## Adding the actual posts
+
 
 Now, whenever you want to write a new post as a notebook, simply convert the `.ipynb` file to blogger-html and copy its entire contents to the clipboard. Then go to the 'raw html' view of the post, remove anything Blogger may have put there by default, and paste.  You should also click on the 'options' tab (right hand side) and select both `Show HTML literally` and `Use <br> tag`, else your paragraph breaks will look all wrong.
 
 That's it!
 
-</script></section><section data-markdown><script type="text/template">
+</script></section>
+<section data-markdown><script type="text/template">
 
 ## What can you put in?
+
 
 I will now add a few bits of code, plots, math, etc, to show which kinds of content can be put in and work out of the box.  These are mostly bits copied from our [example notebooks](https://github.com/ipython/ipython/tree/master/docs/examples/notebooks) so the actual content doesn't matter, I'm just illustrating the *kind* of content that works.
 
@@ -125,7 +157,8 @@ I will now add a few bits of code, plots, math, etc, to show which kinds of cont
     For more information, type 'help(pylab)'.
 
 
-</script></section><section data-markdown><script type="text/template">
+</script></section>
+<section data-markdown><script type="text/template">
 
 With pylab loaded, the usual matplotlib operations work
 
@@ -143,7 +176,8 @@ With pylab loaded, the usual matplotlib operations work
 ![](example_slide_files/example_slide_fig_00.png)
 
 
-</script></section><section data-markdown><script type="text/template">
+</script></section>
+<section data-markdown><script type="text/template">
 
 The notebook, thanks to MathJax, has great LaTeX support, so that you can type inline math $(1,\gamma,\ldots, \infty)$ as well as displayed equations:
 
@@ -153,9 +187,12 @@ $$
 
 **(the last equation is beatiful, isn't it?... Damián talking... he he!)**
 
-</script></section><section><section data-markdown><script type="text/template">
+</script></section>
+<section>
+<section data-markdown><script type="text/template">
 
 ## You can easily include formatted text and code with markdown
+
 
 You can *italicize*, **boldface**
 
@@ -177,23 +214,30 @@ or other languages:
       x += 4;
     }
 
+
 **And you also have highlight for your code, hehe! (Damián talking again...)**
 
-</script></section></section><section data-markdown><script type="text/template">
+</script></section>
+</section>
+<section data-markdown><script type="text/template">
 
 And since the notebook can store displayed images in the file itself, you can show images which will be embedded in your post:
 
+
 ![Image](http://www.bugtreat.com/blog/wp-content/uploads/2012/04/Python-Programming-Language.png)
 
-</script></section><section data-markdown><script type="text/template">
+</script></section>
+<section data-markdown><script type="text/template">
 
 # IPython rocks!
+
 
 Just my little contribution...
 
 I have a lot of work to do but this is an exciting beginning!
 
-You can check [vIPer](http://www.viperapp.oquanta.info).
+You can check [here](https://github.com/ipython/nbconvert/pull/63) for more information.
+
 
 And you can find me at:
 
@@ -201,44 +245,43 @@ And you can find me at:
 * [OQUANTA](http://www.oquanta.info)
 * [BLOG](http://www.damian.oquanta.info)
 
-
 </script></section>
 </div></div>
 
-    <script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/lib/js/head.min.js"></script>
 
-    <script src="reveal/js/reveal.min.js"></script>
+<script src="reveal/js/reveal.min.js"></script>
 
-    <script>
+<script>
 
-        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
+// Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
 
-            theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
-            // Optional libraries used to extend on reveal.js
-            dependencies: [
-                { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-                { src: 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML', async: true },  
-                { src: 'js/revealmathjax.js', async: true}                                   
-                ]
-                });
-    </script>
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+{ src: 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML', async: true },
+{ src: 'js/revealmathjax.js', async: true}
+]
+});
+</script>
 
-    <script>
-        Reveal.addEventListener( 'slidechanged', function( event ) {   
-        MathJax.Hub.Rerender(event.currentSlide);
-        });
-    </script>
+<script>
+Reveal.addEventListener( 'slidechanged', function( event ) {
+MathJax.Hub.Rerender(event.currentSlide);
+});
+</script>
 
 </body>
 </html>
