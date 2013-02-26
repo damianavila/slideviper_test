@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Demo Site (python)</title><link>http://nikola.ralsina.com.ar</link><description>This is a demo site for Nikola.</description><lastBuildDate>Mon, 25 Feb 2013 22:55:49 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Slider for nbconvert...</title><link>http://nikola.ralsina.com.ar/posts/slider-for-nbconvert.html</link><description>&lt;p&gt;I have implemented reveal.js slides for vIPer (I will publish a
+post about that the next days...).&lt;/p&gt;
+&lt;p&gt;Then, I showed the resulting slides &lt;a class="reference external" href="http://www.slideviper.oquanta.info/reveal/Example_new_slides.html"&gt;http://www.slideviper.oquanta.info/reveal/Example_new_slides.html&lt;/a&gt;
+to some IPython team members and one of them, Brian, says:&lt;/p&gt;
+&lt;blockquote&gt;
+"it would be great if nbcovert could output reveal.js slides."&lt;/blockquote&gt;
+&lt;p&gt;and then, Fernando (if you know what is IPython, you know these guys) replies:&lt;/p&gt;
+&lt;blockquote&gt;
+"we can certainly add that kind of functionality as output options..."&lt;/blockquote&gt;
+&lt;p&gt;So, keeping in mind the implementation in vIPer, I provided a dirty and basic
+new implementation to get reveal-based slides from nbconvert.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/slider-for-nbconvert.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/slider-for-nbconvert.html</guid><pubDate>Sun, 02 Dec 2012 21:40:56 GMT</pubDate></item><item><title>Improving vIPer slideshows styling</title><link>http://nikola.ralsina.com.ar/posts/improving-viper-slideshows-styling.html</link><description>&lt;p&gt;The last weekend, I had some time to improve the styling of the slideshow view (of the IPython notebook) rendered by vIPer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/improving-viper-slideshows-styling.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/improving-viper-slideshows-styling.html</guid><pubDate>Mon, 08 Oct 2012 00:33:45 GMT</pubDate></item><item><title>Nikola + nbconvert</title><link>http://nikola.ralsina.com.ar/posts/nikola-nbconvert.html</link><description>&lt;p&gt;Importing a static view (rendered by nbconvert) of
+one IPython example notebook into a nikola blog post:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. raw:: html
+   :file: /home/damian/Desarrollos/Sitios/Damian_blog_nikola/files/Test.html
+&lt;/pre&gt;
+&lt;p&gt;It works! You can see below... the themes will be available soon.&lt;/p&gt;
+&lt;!-- TEASER_END
+
+.. raw:: html
+  :file: /home/damian/Desarrollos/Sitios/Damian_blog_nikola/files/Test.html --&gt;
+&lt;p&gt;Dami&amp;#225;n.&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/nikola-nbconvert.html</guid><pubDate>Thu, 20 Sep 2012 17:08:19 GMT</pubDate></item><item><title>A simple overview of vIPer</title><link>http://nikola.ralsina.com.ar/posts/a-simple-overview-of-viper.html</link><description>&lt;p&gt;The idea of this video is to show you the major features of vIPer.&lt;/p&gt;
+&lt;p&gt;Here we go:&lt;/p&gt;
+&lt;iframe width="420" height="315" src="http://www.youtube.com/embed/n5IWwJnWkzQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;The cleaning up of the code is almost done, so the release is very close...&lt;/p&gt;
+&lt;p&gt;Regards.&lt;/p&gt;
+&lt;p&gt;Dami&amp;#225;n.&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/a-simple-overview-of-viper.html</guid><pubDate>Fri, 29 Jun 2012 13:50:00 GMT</pubDate></item><item><title>vIPer</title><link>http://nikola.ralsina.com.ar/posts/viper.html</link><description>&lt;p&gt;vIPer is an application specifically designed to work with
+&lt;a class="reference external" href="http://ipython.org/"&gt;IPython&lt;/a&gt; notebooks.&lt;/p&gt;
+&lt;p&gt;It is a Python project I have been developing for the last weeks...&lt;/p&gt;
+&lt;p&gt;Here, you can see a video of one of my beloved features, a direct slide-show mode
+for working notebooks:&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/viper.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/viper.html</guid><pubDate>Mon, 25 Jun 2012 00:44:00 GMT</pubDate></item><item><title>Powered by Nikola...</title><link>http://nikola.ralsina.com.ar/posts/powered-by-nikola.html</link><description>&lt;p&gt;Nikola is a static site generator created by a member of the
+&lt;a class="reference external" href="http://python.org.ar/pyar"&gt;PyAr&lt;/a&gt; community (Roberto Alsina).
+It is a great project and the pythonic-way I choose to blog again...&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/powered-by-nikola.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/powered-by-nikola.html</guid><pubDate>Wed, 20 Jun 2012 13:05:00 GMT</pubDate></item></channel></rss>

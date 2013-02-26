@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Demo Site (blog)</title><link>http://nikola.ralsina.com.ar</link><description>This is a demo site for Nikola.</description><lastBuildDate>Mon, 25 Feb 2013 22:55:50 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Powered by Nikola...</title><link>http://nikola.ralsina.com.ar/posts/powered-by-nikola.html</link><description>&lt;p&gt;Nikola is a static site generator created by a member of the
+&lt;a class="reference external" href="http://python.org.ar/pyar"&gt;PyAr&lt;/a&gt; community (Roberto Alsina).
+It is a great project and the pythonic-way I choose to blog again...&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/powered-by-nikola.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/powered-by-nikola.html</guid><pubDate>Wed, 20 Jun 2012 13:05:00 GMT</pubDate></item><item><title>Beginning...</title><link>http://nikola.ralsina.com.ar/posts/beginning.html</link><description>&lt;p&gt;For almost five years, I have been traveling from
+La Plata to C.A.B.A. (and vice-versa) by car, by bus, by subway, by train... almost every day.
+A lot of hours of public transportation have run "under the bridge".
+As you can imagine, I have read a lot of papers, books and newspapers.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/beginning.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/beginning.html</guid><pubDate>Tue, 19 Jun 2012 20:09:00 GMT</pubDate></item></channel></rss>

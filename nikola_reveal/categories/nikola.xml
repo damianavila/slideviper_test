@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Demo Site (nikola)</title><link>http://nikola.ralsina.com.ar</link><description>This is a demo site for Nikola.</description><lastBuildDate>Mon, 25 Feb 2013 22:55:49 GMT</lastBuildDate><generator>nikola</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Improving vIPer slideshows styling</title><link>http://nikola.ralsina.com.ar/posts/improving-viper-slideshows-styling.html</link><description>&lt;p&gt;The last weekend, I had some time to improve the styling of the slideshow view (of the IPython notebook) rendered by vIPer.&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/improving-viper-slideshows-styling.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/improving-viper-slideshows-styling.html</guid><pubDate>Mon, 08 Oct 2012 00:33:45 GMT</pubDate></item><item><title>Nikola + nbconvert</title><link>http://nikola.ralsina.com.ar/posts/nikola-nbconvert.html</link><description>&lt;p&gt;Importing a static view (rendered by nbconvert) of
+one IPython example notebook into a nikola blog post:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+.. raw:: html
+   :file: /home/damian/Desarrollos/Sitios/Damian_blog_nikola/files/Test.html
+&lt;/pre&gt;
+&lt;p&gt;It works! You can see below... the themes will be available soon.&lt;/p&gt;
+&lt;!-- TEASER_END
+
+.. raw:: html
+  :file: /home/damian/Desarrollos/Sitios/Damian_blog_nikola/files/Test.html --&gt;
+&lt;p&gt;Dami&amp;#225;n.&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/nikola-nbconvert.html</guid><pubDate>Thu, 20 Sep 2012 17:08:19 GMT</pubDate></item><item><title>Powered by Nikola...</title><link>http://nikola.ralsina.com.ar/posts/powered-by-nikola.html</link><description>&lt;p&gt;Nikola is a static site generator created by a member of the
+&lt;a class="reference external" href="http://python.org.ar/pyar"&gt;PyAr&lt;/a&gt; community (Roberto Alsina).
+It is a great project and the pythonic-way I choose to blog again...&lt;/p&gt;
+&lt;p&gt;&lt;a href="/posts/powered-by-nikola.html"&gt;Read more...&lt;/a&gt;&lt;/p&gt;</description><guid>http://nikola.ralsina.com.ar/posts/powered-by-nikola.html</guid><pubDate>Wed, 20 Jun 2012 13:05:00 GMT</pubDate></item></channel></rss>
